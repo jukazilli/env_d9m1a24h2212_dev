@@ -1,0 +1,27 @@
+
+> web@1.0.0 build
+> next build
+
+
+> Build error occurred
+Error: EPERM: operation not permitted, rename 'C:\Users\julia\AppData\Roaming\nextjs-nodejs\Config\config.json.763313334' -> 'C:\Users\julia\AppData\Roaming\nextjs-nodejs\Config\config.json'
+    at Object.renameSync (node:fs:1030:11)
+    at Function.writeFileSync [as sync] (C:\Users\julia\Desktop\env_d9m1a24h2212_dev\my-turborepo\node_modules\next\dist\compiled\conf\index.js:15:24526)
+    at set store [as store] (C:\Users\julia\Desktop\env_d9m1a24h2212_dev\my-turborepo\node_modules\next\dist\compiled\conf\index.js:1:109642)
+    at Conf.set (C:\Users\julia\Desktop\env_d9m1a24h2212_dev\my-turborepo\node_modules\next\dist\compiled\conf\index.js:1:107635)
+    at Telemetry.notify (C:\Users\julia\Desktop\env_d9m1a24h2212_dev\my-turborepo\node_modules\next\dist\telemetry\storage.js:99:23)
+    at new Telemetry (C:\Users\julia\Desktop\env_d9m1a24h2212_dev\my-turborepo\node_modules\next\dist\telemetry\storage.js:253:14)
+    at C:\Users\julia\Desktop\env_d9m1a24h2212_dev\my-turborepo\node_modules\next\dist\build\index.js:232:31
+    at async Span.traceAsyncFn (C:\Users\julia\Desktop\env_d9m1a24h2212_dev\my-turborepo\node_modules\next\dist\trace\trace.js:147:20)
+    at async build (C:\Users\julia\Desktop\env_d9m1a24h2212_dev\my-turborepo\node_modules\next\dist\build\index.js:187:29)
+    at async main (C:\Users\julia\Desktop\env_d9m1a24h2212_dev\my-turborepo\node_modules\next\dist\bin\next:157:5) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'rename',
+  path: 'C:\\Users\\julia\\AppData\\Roaming\\nextjs-nodejs\\Config\\config.json.763313334',
+  dest: 'C:\\Users\\julia\\AppData\\Roaming\\nextjs-nodejs\\Config\\config.json'
+}
+npm ERR! Lifecycle script `build` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: web@1.0.0 
+npm ERR!   at location: C:\Users\julia\desktop\env_d9m1a24h2212_dev\my-turborepo\apps\web 
