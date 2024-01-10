@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
-  transpilePackages: ["@repo/ui"],
-};
+
+  module.exports = {
+    async redirects() {
+      return [
+        {
+          source: '/about',
+          destination: 'apps/web/index.html',
+          permanent: true,
+        },
+      ]
+    },
+  }
+;
